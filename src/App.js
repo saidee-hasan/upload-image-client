@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
+import Imgbb from './components/Upload/Imgbb';
 
 function App() {
   const [info,setInfo] =useState({});
@@ -31,7 +32,7 @@ const handleSubmit = ()=>{
 }
     return (
     <div className="App">
-      <h1>{`http://localhost:5000/${doctors.name}`}</h1>
+    
    
     <form onSubmit={handleSubmit} class="row g-3">
     <div class="col-auto">
@@ -50,6 +51,8 @@ const handleSubmit = ()=>{
     <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
   </div>
 </form>
+
+<Imgbb></Imgbb>
     </div>
   );
 }
